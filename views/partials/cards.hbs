@@ -1,0 +1,21 @@
+<div class="col s12 m4">
+
+    <div class="card z-depth-5">
+        <a href="http://www.giantbomb.com/{{this.link}}">
+            <div class="card-image center">
+                <img class="responsive-img" src="{{this.img}}" alt="thumbnail image">
+                <span class="center card-title white-text">{{this.title}}</span>
+            </div>
+        </a>
+        <div class="card-content grey-text">
+            <p>{{this.byLine}}</p>
+        </div>
+        <div class="card-action black-text">
+            <p>{{this.snippet}}</p>
+            <hr>
+            <button class="commentButton waves-effect waves-red btn-flat" id="{{this._id}}">
+                <i class="material-icons">comment</i>  {{this.comments.length}}
+            </button>
+        </div>
+    </div>
+</div>

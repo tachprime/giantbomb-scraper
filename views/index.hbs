@@ -1,0 +1,56 @@
+<nav class="red accent-4">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Giant Bomb Vid Scraper</a>
+    </div>
+</nav>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h1 class="header center white-text">Giant Bomb Videos</h1>
+        <div class="row center">
+            <h5 class="header col s12 grey-text text-lighten-3">most recent video feed from GiantBomb.com </h5>
+        </div>
+        <div class="row center">
+            <a href="/scrape" id="download-button" class="btn-large waves-effect waves-light red accent-4">Update Video feed</a>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="section">
+
+        <!--   Video Articles Section   -->
+        <div class="row">
+            {{#each articles}}
+                {{>cards}}
+            {{/each}}
+        </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+</div>
+
+{{>comments}}
+
+<footer class="page-footer grey darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Giant Bomb</h5>
+                <p class="grey-text text-lighten-4">is an affiliate of the CBSi family all content
+                    is wholey owned and created by Giantbomb.com.
+                    This site is not a part of or affliated with CBS interactive families or Giantbomb.com officially.</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Designed with <a class="blue-text" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </div>
+</footer>

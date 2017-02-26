@@ -1,0 +1,19 @@
+{
+  "name": "sitescraper",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "body-parser": "*",
+    "cheerio": "^0.22.0",
+    "express": "*",
+    "express-handlebars": "*",
+    "hbs": "*",
+    "mongoose": "^4.8.4",
+    "morgan": "*",
+    "request": "^2.79.0"
+  }
+}
