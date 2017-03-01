@@ -1,9 +1,10 @@
 const Promise = require('bluebird');
 const mongoose = require('mongoose');
 
+const url = process.env.MONGODB_URI || "mongodb://localhost/articles";
 mongoose.Promise = Promise;
 
-mongoose.connect("mongodb://localhost/articles");
+mongoose.connect(url);
 var db = mongoose.connection;
 
 db.on("error", function (err) {
